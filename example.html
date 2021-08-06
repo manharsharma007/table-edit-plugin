@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Editable</title>
+</head>
+<body>
+    <table style="width:500px;">
+        <tr data-index = 1>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td class="editable-col">
+                <div class="editable-front">hello</div>
+               <div class="editable-back">
+                    <select name="tee" class="editable-bind" data-index_bind = 1>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+               </div>
+            </td>
+            <td>hello</td>
+        </tr>
+        <tr data-index = 1>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td class="editable-col">
+                <div class="editable-front">hello</div>
+               <div class="editable-back">
+                    <select name="tee" class="editable-bind" data-index_bind = 1>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+               </div>
+            </td>
+            <td>hello</td>
+        </tr>
+        <tr data-index = 1>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td class="editable-col">
+                <div class="editable-front">hello</div>
+               <div class="editable-back">
+                    <select name="tee" class="editable-bind" data-index_bind = 1>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+               </div>
+            </td>
+            <td>hello</td>
+        </tr>
+    </table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="editable.js"></script>
+<script>
+$('table').editable({
+        url : 'author/quizzes/multichoice',
+        baseParams: {quizID : 10},
+    }, function(data) {
+        console.log(data);
+    });
+</script>
+
+</body>
+</html>
