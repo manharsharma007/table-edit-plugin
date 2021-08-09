@@ -92,7 +92,7 @@
                 parent = $self._getValue('element');
                 el = $self._getValue('bind');
                 name = $(el).attr('name');
-                index = $(el).attr('data-index_bind');
+                index = $(el).attr('data-index');
                 value = el.val();
 
                 param = Object.assign({}, { name : value, id : index }, $self.options.baseParams);
